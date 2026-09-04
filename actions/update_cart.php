@@ -1,0 +1,1 @@
+<?php require_once '../config/database.php';require_once '../includes/functions.php';$id=(int)($_POST['product_id']??0);$q=max(1,(int)($_POST['quantity']??1));if($id>0)$_SESSION['cart'][$id]=$q;sync_user_cart($pdo);go('../cart.php');
