@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const b=document.getElementById("menuBtn"),n=document.getElementById("nav");if(b)b.onclick=()=>n.classList.toggle("open");});
